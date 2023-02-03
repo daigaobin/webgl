@@ -1,10 +1,10 @@
 <!--
  * @Author: 牧鱼
- * @Date: 2023-02-03 16:58:28
- * @LastEditTime: 2023-02-03 17:12:38
+ * @Date: 2023-02-03 17:04:20
+ * @LastEditTime: 2023-02-03 17:37:45
  * @LastEditors: 牧鱼
  * @Description: 
- * @FilePath: \webgl\src\canvas.html
+ * @FilePath: \webgl\src\webgl.html
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -22,10 +22,11 @@
   </canvas>
 
   <script>
+    // TODO Fix canvas
     const ctx = document.getElementById("canvas")
-    const canvas = ctx.getContext("2d");
-    canvas.fillStyle = 'red';
-    canvas.fillRect(10, 10, 100, 100)
+    const webgl = ctx.getContext("webgl");
+    webgl.clearColor(1, 0, 0, 1); //rgba
+    webgl.clear(webgl.COLOR_BUFFER_BIT);
   </script>
 </body>
 
