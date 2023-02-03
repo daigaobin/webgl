@@ -1,0 +1,32 @@
+<!--
+ * @Author: 牧鱼
+ * @Date: 2023-02-03 16:58:28
+ * @LastEditTime: 2023-02-03 17:02:03
+ * @LastEditors: 牧鱼
+ * @Description: 
+ * @FilePath: \webgl\src\canvas.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <canvas id="canvas" width="400" height="400">
+    此浏览器不支持canvas
+  </canvas>
+
+  <script>
+    const ctx = document.getElementById("canvas")
+    const canvas = ctx.getContext("2d");
+    canvas.fillStyle = 'red';
+    canvas.fillRect(10, 10, 100, 100)
+  </script>
+</body>
+
+</html>
